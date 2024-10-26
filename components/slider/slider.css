@@ -1,0 +1,146 @@
+.slider {
+    margin: 0 auto;
+    width: 800px;
+    height: 300px;
+    max-width: 95%;
+    overflow: hidden;
+    border: solid 2px #FFFFFF;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    gap: 5px;
+    transition: 0.5s;
+}
+
+.slide img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.slide-text {
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align: center;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    max-width: 95%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.manual-btn {
+    border: solid 2px #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:hover {
+    background: #2C8BE4;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: solid 2px #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 301px;
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #2C8BE4;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #2C8BE4;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #2C8BE4;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background: #2C8BE4;
+}
+
+@media screen and (max-width: 800px) {
+    .slider {
+        width: 400px;
+        height: 200px;
+        max-width: 98%;
+        overflow: hidden;
+        border: solid 2px #FFFFFF;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .slide-text {
+        font-size: 1em;
+    }
+
+    .manual-navigation {
+        width: 400px;
+        max-width: 98%;
+        margin-top: 15px;
+        gap: 20px;
+    }
+
+    .navigation-auto {
+        width: 400px;
+        max-width: 98%;
+        margin-top: 201px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+}

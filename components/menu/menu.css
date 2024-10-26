@@ -1,0 +1,120 @@
+.menu-lateral {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #303030;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    padding: 20px 0 40px 0.5%;
+    border-right: solid 4px #2c8be4;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.menu-lateral.expandir {
+    width: 300px;
+}
+
+.menu-lateral ul {
+    height: 100%;
+}
+
+.menu-sanduiche {
+    width: 100%;
+    padding: 0 0 10px 15px;
+}
+
+.menu-sanduiche i {
+    font-size: 30px;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.item-menu {
+    transition: 0.4s;
+}
+
+/*.item-menu.active {
+    background-color: #2c8be4;
+}*/
+
+.item-menu:hover {
+    background-color: #2c8be4;
+}
+
+.item-menu a {
+    color: #FFF;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    align-items: center;
+}
+
+.item-menu .txt-menu {
+    margin-left: 80px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: 0.7s;
+}
+
+.menu-lateral.expandir .txt-menu {
+    margin-left: 40px;
+    opacity: 1;
+}
+
+.icon-menu i {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    .cabecalho {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        height: 60px;
+        position: fixed;
+        color: #FFF;
+        top: 0;
+        left: 0;
+    }
+
+    .menu-sanduiche-mobile {
+        width: 20%;
+        padding: 0 0 10px 15px;
+        padding-top: 10px;
+    }
+
+    .menu-sanduiche-mobile i {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .start-container {
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu-lateral {
+        padding: 10px 0 40px 0.5%;
+        width: 0;
+        box-shadow: none;
+        border-right: none;
+        z-index: -1;
+    }
+
+    .menu-lateral.expandir {
+        width: 100%;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        border-right: solid 4px #2c8be4;
+        z-index: 1;
+    }
+}
+

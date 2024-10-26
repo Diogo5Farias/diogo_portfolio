@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components/menu/menu.css">
+    <link rel="stylesheet" href="components/about/about.css">
+    <link rel="stylesheet" href="components/slider/slider.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script defer src="components/menu/menu.js"></script>
+    <script defer src="components/slider/slider.js"></script>
+    <title>Diogo Farias Portfolio</title>
+</head>
+<body>
+    <!--Menu Lateral-->
+    <nav class="menu-lateral">
+        <div class="menu-sanduiche">
+            <i id="botaoMenu" class="bi bi-list"></i>
+        </div>
+        <ul>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon-menu"><i class="bi bi-house-door"></i></span>
+                    <span class="txt-menu">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon-menu"><i class="bi bi-puzzle"></i></span>
+                    <span class="txt-menu">My works</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon-menu"><i class="bi bi-person-badge"></i></span>
+                    <span class="txt-menu">About me</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="#">
+                    <span class="icon-menu"><i class="bi bi-mailbox"></i></span>
+                    <span class="txt-menu">Reach out me</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--Menu Lateral Fim-->
+    <header class="cabecalho mobile">
+        <div class="menu-sanduiche-mobile">
+            <i id="botaoMenuMobile" class="bi bi-list"></i>
+        </div>
+        <div class="start-container">
+            <div class="logo">
+                <div class="desenho-1">
+                    <div class="d-11"></div>
+                    <div class="d-12"></div>
+                </div>
+                <div class="desenho-2">
+                    <div class="d-21"></div>
+                    <div class="d-22"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="start-container">
+            <div class="logo desktop">
+                <div class="desenho-1">
+                    <div class="d-11"></div>
+                    <div class="d-12"></div>
+                </div>
+                <div class="desenho-2">
+                    <div class="d-21"></div>
+                    <div class="d-22"></div>
+                </div>
+            </div>
+            <h1 class="title">DIOGO FARIAS</h1>
+            <h2 class="subtitle">Front-End Developer · UI/UX Designer</h2>
+        </div>
+        
+        <!--Slider-->
+        <div class="slider">
+            <div class="slides">
+                <!--Radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <!--Slide content-->
+                <a class="slide first" href="https://open.spotify.com/intl-pt/artist/4clORAuUp0CcOHrV5LLHbL?si=696654ce82c44ec8" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/411Mw5puzWL._UX358_FMwebp_QL85_.jpg" alt="Diogo Farias - Mary">
+                    <p class="slide-text">
+                        <i id="botaoMenuMobile" class="bi bi-spotify"></i>
+                        my music on Spotify
+                    </p>
+                </a>
+                <a class="slide" href="https://djbrepresentacoes.vercel.app/" target="_blank">
+                    <img src="img/djb-representacoes.png" alt="DJB Representações">
+                    <p class="slide-text">DJB Representações website</p>
+                </a>
+                <a class="slide" href="https://music.amazon.com.br/artists/B09YJ14493/diogo-farias" target="_blank">
+                    <img src="https://m.media-amazon.com/images/I/411Mw5puzWL._UX358_FMwebp_QL85_.jpg" alt="Diogo Farias - Mary">
+                    <p class="slide-text">
+                        <i id="botaoMenuMobile" class="bi bi-amazon"></i>
+                        my music on Amazon Music
+                    </p>
+                </a>
+                <a class="slide" href="#" target="_blank">
+                    <img src="img/responsive-design.png">
+                    <p class="slide-text">
+                        your website could be here!
+                    </p>
+                </a>
+                <!--Navigation auto-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+        </div>
+        <!--Slider Fim-->
+        <div class="about-me">
+            <h3 class="about-title">about me</h3>
+            <div class="about-content">
+                <img src="img/foto-diogo.jpeg" alt="Diogo Farias">
+                <div class="about-text">
+                    <p class="about-name">my name is Diogo Henrique Farias</p>
+                    <p>I'm a Front-End Developer and UI/UX Designer, also a musician.</p>
+                    <p>Worked with banking for a while, now I'm looking for a new horizons.</p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="contact"></div>
+    </main>
+    <footer>
+        <div class="email">
+            <p>Reach out me:</p><a href="mailto:drogofarias@gmail.com" class="email-link">drogofarias@gmail.com</a>
+        </div>
+        <div class="credits">
+            <p>Credits:</p>
+            <a href="https://icons.getbootstrap.com" target="_blank" title="icons" class="license">Simple icons created by Bootstrap Authors Copyright (c) 2019-2024</a>
+            <a href="https://www.flaticon.com/free-icons/responsive-design" title="responsive design icon" class="license">Responsive design icon created by Freepik - Flaticon</a>
+        </div>
+    </footer>
+</body>
+</html>
+
